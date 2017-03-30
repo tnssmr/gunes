@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meyveler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cengiz.cengo.Meyveler"
+    >
+
+    <TextView android:id="@+id/meyve_hosgeldiniz"
+        android:text="MEYVELER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="19dp"
+        android:textColorLink="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_orange_dark"
+        android:fontFamily="casual"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/meyve_ogren"
+        android:text=" Öğren "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/meyve_hosgeldiniz"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text=" Tüm Meyveler "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meyve_tum"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/meyve_oyna"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <Button android:id="@+id/meyve_oyna"
+        android:text=" Oyna "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:fontFamily="serif-monospace"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/meyve_ogren"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/gunees"
+        android:id="@+id/imageView12"
+        android:layout_below="@+id/meyve_tum"
+        android:layout_alignRight="@+id/meyve_oyna"
+        android:layout_alignEnd="@+id/meyve_oyna"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>
